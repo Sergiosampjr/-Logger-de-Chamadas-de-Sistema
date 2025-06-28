@@ -138,7 +138,7 @@ void wait_for_syscall(pid_t child_pid)
         // WIFSTOPPED: Verifica se o filho parou por um sinal.
         // WSTOPSIG: Pega o sinal que parou o filho.
         // Queremos continuar apenas se o sinal for de uma trap de syscall (SIGTRAP).
-        if (WIFSTOPPED(status) && WSTOPSIG(status) & 0x80)
+        if (WIFSTOPPED(status) && (WSTOPSIG(status) & 0x80))
         {
             return;
         }
