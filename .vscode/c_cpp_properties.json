@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/",
+                "/usr/include/aarch64-linux-gnu"
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}

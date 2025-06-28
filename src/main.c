@@ -16,9 +16,11 @@
 #include <unistd.h>
 #include <sys/ptrace.h>
 #include <sys/wait.h>
-#include <sys/user.h>  // Obrigatório para a struct user_regs_struct
-#include <sys/prctl.h> // Obrigatório para prctl(PR_SET_PDEATHSIG)
-#include <signal.h>    // Obrigatório para SIGKILL
+#include <sys/user.h>   // Obrigatório para a struct user_regs_struct
+#include <sys/prctl.h>  // Obrigatório para prctl(PR_SET_PDEATHSIG)
+#include <signal.h>     // Obrigatório para SIGKILL
+#include <sys/uio.h>    // Obrigatório para a struct iovec
+#include <linux/elf.h>  // Obrigatório para a constante NT_PRSTATUS
 
 // --- Assinaturas de Funções ---
 // #include "parser.h" // Vamos descomentar isso quando parser.h for criado.
@@ -75,29 +77,44 @@ int main(int argc, char *argv[])
         // Espera o filho parar na chamada execvp()
         wait(NULL);
 
-        // Loop principal: vamos capturar cada syscall
-        while (1)
-        {
-            // Prepara para a ENTRADA da syscall
-            wait_for_syscall(child_pid);
-
-            // Estrutura para armazenar os registradores da CPU do processo filho
+         // Loop principal: vamos capturar cada syscall
+        while(1) {
+            // Estrutura para armazenar os registradores da CPU do processo filho.
+            // Declaramos uma vez aqui, e cada bloco a preenche.
             struct user_regs_struct regs;
-            ptrace(PTRACE_GETREGS, child_pid, NULL, &regs);
 
-            /// TODO: Chamar a função de `parser.c` aqui para decodificar `regs`
-            // Por enquanto, vamos apenas imprimir o número da syscall (que fica no registrador orig_rax em x86-64)
-            printf("SYSCALL_ENTRY: Número = %lld\n", regs.orig_rax);
-
-            // Prepara para a SAÍDA da syscall
+            // --- TRATAMENTO DA ENTRADA DA SYSCALL ---
             wait_for_syscall(child_pid);
 
-            // Pega os registradores novamente para ver o valor de retorno
-            ptrace(PTRACE_GETREGS, child_pid, NULL, &regs);
+            #if defined(__x86_64__)
+                // Lógica específica para x86-64 para obter os registradores
+                ptrace(PTRACE_GETREGS, child_pid, NULL, &regs);
+                printf("SYSCALL_ENTRY: Número = %lld\n", regs.orig_rax);
 
-            /// TODO: Capturar e formatar o valor de retorno, que fica no registrador `rax`
-            printf("SYSCALL_EXIT:  Retorno = %lld\n\n", regs.rax);
-        }
+                // --- TRATAMENTO DA SAÍDA DA SYSCALL ---
+                wait_for_syscall(child_pid);
+
+                // Pega os registradores novamente para obter o valor de retorno
+                ptrace(PTRACE_GETREGS, child_pid, NULL, &regs);
+                printf("SYSCALL_EXIT:  Retorno = %lld\n\n", regs.rax);
+
+            #elif defined(__aarch64__)
+                // Lógica específica para aarch64 para obter os registradores
+                struct iovec iov = { .iov_base = &regs, .iov_len = sizeof(regs) };
+                ptrace(PTRACE_GETREGSET, child_pid, NT_PRSTATUS, &iov);
+                printf("SYSCALL_ENTRY: Número = %lld\n", regs.regs[8]);
+
+                // --- TRATAMENTO DA SAÍDA DA SYSCALL ---
+                wait_for_syscall(child_pid);
+
+                // Pega os registradores novamente para obter o valor de retorno
+                ptrace(PTRACE_GETREGSET, child_pid, NT_PRSTATUS, &iov);
+                printf("SYSCALL_EXIT:  Retorno = %lld\n\n", regs.regs[0]);
+
+            #else
+                #error "Arquitetura não suportada."
+            #endif
+        } // Fim do while(1)
     }
 
     return 0;
