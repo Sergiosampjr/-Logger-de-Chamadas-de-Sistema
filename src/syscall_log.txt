@@ -1,0 +1,1330 @@
+[2025-06-28 19:51:36] [PID 28356] Syscall brk chamada com argumentos:
+  arg1: 0
+  arg2: 140404445888044
+  arg3: 79
+  arg4: 140404445888044
+  arg5: 140404445920888
+  arg6: 26
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 12289
+  arg2: 140734548790464
+  arg3: 140404445848272
+  arg4: 13
+  arg5: 3
+  arg6: 128
+[2025-06-28 19:51:36] [PID 28356] Syscall access chamada com argumentos:
+  arg1: 140404445899232
+  arg2: 4
+  arg3: 140404445733488
+  arg4: 8
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445887360
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445887360
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786880
+  arg3: 140734548786880
+  arg4: 0
+  arg5: 1
+  arg6: 140404445887360
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 106385
+  arg3: 1
+  arg4: 2
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 106385
+  arg3: 1
+  arg4: 2
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445928976
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445928976
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 140734548787304
+  arg3: 832
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445928976
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786960
+  arg3: 140734548786960
+  arg4: 0
+  arg5: 1
+  arg6: 140404445925776
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 8192
+  arg3: 3
+  arg4: 34
+  arg5: 4294967295
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 174600
+  arg3: 1
+  arg4: 2050
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 140404445466624
+  arg2: 135168
+  arg3: 0
+  arg4: 2050
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404445466624
+  arg2: 102400
+  arg3: 5
+  arg4: 2066
+  arg5: 4
+  arg6: 24576
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404445569024
+  arg2: 28672
+  arg3: 1
+  arg4: 2066
+  arg5: 4
+  arg6: 126976
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404445601792
+  arg2: 8192
+  arg3: 3
+  arg4: 2066
+  arg5: 4
+  arg6: 155648
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404445609984
+  arg2: 6664
+  arg3: 3
+  arg4: 50
+  arg5: 4294967295
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 41
+  arg3: 0
+  arg4: 140404445442048
+  arg5: 4026531573
+  arg6: 1879048226
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445619424
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445619424
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 140734548787272
+  arg3: 832
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445619424
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786272
+  arg3: 784
+  arg4: 64
+  arg5: 140734548786272
+  arg6: 140404445619424
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786224
+  arg3: 32
+  arg4: 848
+  arg5: 140734548786272
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786144
+  arg3: 68
+  arg4: 880
+  arg5: 140734548786272
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786928
+  arg3: 140734548786928
+  arg4: 880
+  arg5: 1
+  arg6: 140404445925776
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 140734548785984
+  arg3: 784
+  arg4: 64
+  arg5: 49407
+  arg6: 140404445620608
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 140734548785184
+  arg3: 32
+  arg4: 848
+  arg5: 4
+  arg6: 848
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 140734548785152
+  arg3: 68
+  arg4: 880
+  arg5: 4
+  arg6: 880
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 2037344
+  arg3: 1
+  arg4: 2050
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404443541504
+  arg2: 1540096
+  arg3: 5
+  arg4: 2066
+  arg5: 4
+  arg6: 139264
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404445081600
+  arg2: 319488
+  arg3: 1
+  arg4: 2066
+  arg5: 4
+  arg6: 1679360
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404445401088
+  arg2: 24576
+  arg3: 3
+  arg4: 2066
+  arg5: 4
+  arg6: 1994752
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404445425664
+  arg2: 13920
+  arg3: 3
+  arg4: 50
+  arg5: 4294967295
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 41
+  arg3: 0
+  arg4: 140404443402240
+  arg5: 4026531573
+  arg6: 1879048226
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445620688
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445620688
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 140734548787240
+  arg3: 832
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445620688
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786896
+  arg3: 140734548786896
+  arg4: 0
+  arg5: 1
+  arg6: 140404445618176
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 590632
+  arg3: 1
+  arg4: 2050
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404442816512
+  arg2: 413696
+  arg3: 5
+  arg4: 2066
+  arg5: 4
+  arg6: 8192
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404443230208
+  arg2: 163840
+  arg3: 1
+  arg4: 2066
+  arg5: 4
+  arg6: 421888
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404443394048
+  arg2: 8192
+  arg3: 3
+  arg4: 2066
+  arg5: 4
+  arg6: 581632
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 41
+  arg3: 0
+  arg4: 140404442808320
+  arg5: 4026531573
+  arg6: 1879048226
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445621984
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445621984
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 140734548787208
+  arg3: 832
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445621984
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786864
+  arg3: 140734548786864
+  arg4: 0
+  arg5: 1
+  arg6: 140404445618176
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 20752
+  arg3: 1
+  arg4: 2050
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404442787840
+  arg2: 8192
+  arg3: 5
+  arg4: 2066
+  arg5: 4
+  arg6: 4096
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404442796032
+  arg2: 4096
+  arg3: 1
+  arg4: 2066
+  arg5: 4
+  arg6: 12288
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404442800128
+  arg2: 8192
+  arg3: 3
+  arg4: 2066
+  arg5: 4
+  arg6: 12288
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 41
+  arg3: 0
+  arg4: 140404442783744
+  arg5: 4026531573
+  arg6: 1879048226
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445623424
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445623424
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 140734548787144
+  arg3: 832
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445623424
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786864
+  arg3: 68
+  arg4: 824
+  arg5: 140734548787208
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548786800
+  arg3: 140734548786800
+  arg4: 824
+  arg5: 1
+  arg6: 140404445620736
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 140734548785872
+  arg3: 68
+  arg4: 824
+  arg5: 4
+  arg6: 824
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 140408
+  arg3: 1
+  arg4: 2050
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404442664960
+  arg2: 69632
+  arg3: 5
+  arg4: 2066
+  arg5: 4
+  arg6: 24576
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404442734592
+  arg2: 24576
+  arg3: 1
+  arg4: 2066
+  arg5: 4
+  arg6: 94208
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404442759168
+  arg2: 8192
+  arg3: 3
+  arg4: 2066
+  arg5: 4
+  arg6: 114688
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404442767360
+  arg2: 13432
+  arg3: 3
+  arg4: 50
+  arg5: 4294967295
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 41
+  arg3: 40
+  arg4: 140404442640384
+  arg5: 4026531573
+  arg6: 1879048226
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 8192
+  arg3: 3
+  arg4: 34
+  arg5: 4294967295
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4098
+  arg2: 140404442637312
+  arg3: -140404442639664
+  arg4: 64
+  arg5: 144
+  arg6: 2
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 140404445401088
+  arg2: 16384
+  arg3: 1
+  arg4: 140404445918720
+  arg5: 140404445023488
+  arg6: 140404445734512
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 140404442759168
+  arg2: 4096
+  arg3: 1
+  arg4: 140404443692816
+  arg5: 1
+  arg6: 2
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 140404442800128
+  arg2: 4096
+  arg3: 1
+  arg4: 140404443692816
+  arg5: 1
+  arg6: 140404443466184
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 140404443394048
+  arg2: 4096
+  arg3: 1
+  arg4: 140404443692816
+  arg5: 1
+  arg6: 3
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 140404445601792
+  arg2: 4096
+  arg3: 1
+  arg4: 94903443550912
+  arg5: 1
+  arg6: 94903443411056
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 94903443546112
+  arg2: 4096
+  arg3: 1
+  arg4: 94903443549160
+  arg5: 0
+  arg6: 11
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 140404445917184
+  arg2: 4096
+  arg3: 1
+  arg4: 140404445921128
+  arg5: 0
+  arg6: 140404443423440
+[2025-06-28 19:51:36] [PID 28356] Syscall munmap chamada com argumentos:
+  arg1: 140404445626368
+  arg2: 106385
+  arg3: 71532680314880
+  arg4: 140404445921128
+  arg5: 0
+  arg6: 140404443423440
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140404442638032
+  arg2: 140734548790680
+  arg3: 140404442637312
+  arg4: 140404445921128
+  arg5: 140404442780496
+  arg6: 140404443423440
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140404442638048
+  arg2: 24
+  arg3: 140404442637312
+  arg4: 140404445921128
+  arg5: 140404442780496
+  arg6: 140404443423440
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 32
+  arg2: 140734548789984
+  arg3: 0
+  arg4: 8
+  arg5: 0
+  arg6: 140404443423440
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 33
+  arg2: 140734548789984
+  arg3: 0
+  arg4: 8
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 1
+  arg2: 140734548790360
+  arg3: 0
+  arg4: 8
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 0
+  arg2: 3
+  arg3: 0
+  arg4: 140734548790336
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140404445570963
+  arg2: 140734548790288
+  arg3: 140404445173748
+  arg4: 140404445456663
+  arg5: 0
+  arg6: 2
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140404445570970
+  arg2: 140734548790288
+  arg3: 140404445173748
+  arg4: -2801
+  arg5: 0
+  arg6: 2
+[2025-06-28 19:51:36] [PID 28356] Syscall brk chamada com argumentos:
+  arg1: 0
+  arg2: 135168
+  arg3: 688
+  arg4: 140404445420512
+  arg5: 140404445420512
+  arg6: 140404443418736
+[2025-06-28 19:51:36] [PID 28356] Syscall brk chamada com argumentos:
+  arg1: 94904283283456
+  arg2: 135168
+  arg3: 140404445431328
+  arg4: 140404445420512
+  arg5: 140404445420512
+  arg6: 140404443418736
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445570935
+  arg3: 524288
+  arg4: 0
+  arg5: 8
+  arg6: 1
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548789968
+  arg3: 140734548789968
+  arg4: 140404445454978
+  arg5: 1
+  arg6: 1
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 94904283149568
+  arg3: 1024
+  arg4: 140404445454978
+  arg5: 4
+  arg6: 124
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 94904283149568
+  arg3: 1024
+  arg4: 140404445456678
+  arg5: 4
+  arg6: 124
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 0
+  arg3: 140404445403296
+  arg4: 140404445455003
+  arg5: 32768
+  arg6: 124
+[2025-06-28 19:51:36] [PID 28356] Syscall access chamada com argumentos:
+  arg1: 140404445571003
+  arg2: 0
+  arg3: 0
+  arg4: -3122
+  arg5: 0
+  arg6: 124
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445220816
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445220816
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140404445424096
+  arg3: 140404445424096
+  arg4: 0
+  arg5: 1
+  arg6: 140404445220816
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 5707984
+  arg3: 1
+  arg4: 2
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 5707984
+  arg3: 11190
+  arg4: 2
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 1
+  arg2: 21505
+  arg3: 140734548790160
+  arg4: 140404445406784
+  arg5: 140734548790224
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 1
+  arg2: 21523
+  arg3: 140734548790352
+  arg4: 140404445406784
+  arg5: 140734548790224
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140734548789168
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140734548789168
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548788704
+  arg3: 140734548788704
+  arg4: 0
+  arg5: 1
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 94904283155184
+  arg3: 4096
+  arg4: 0
+  arg5: 4
+  arg6: 124
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 94904283155184
+  arg3: 4096
+  arg4: 17
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 0
+  arg3: 140404445403296
+  arg4: 17
+  arg5: 32768
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 94904283155120
+  arg3: 0
+  arg4: 0
+  arg5: 0
+  arg6: 94904283155120
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 94904283155264
+  arg3: 0
+  arg4: 0
+  arg5: 0
+  arg6: 94904283155264
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 94904283155392
+  arg3: 0
+  arg4: 0
+  arg5: 0
+  arg6: 94904283155392
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445205608
+  arg3: 0
+  arg4: 0
+  arg5: 0
+  arg6: 140404445205608
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548787360
+  arg3: 140734548787360
+  arg4: 0
+  arg5: 1
+  arg6: 140404445205608
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 27002
+  arg3: 1
+  arg4: 1
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 27002
+  arg3: 1
+  arg4: 1
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140404445423956
+  arg2: 129
+  arg3: 2147483647
+  arg4: 0
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 94904283156080
+  arg3: 591872
+  arg4: 0
+  arg5: 591872
+  arg6: 94904283156080
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548789200
+  arg3: 140734548789200
+  arg4: 0
+  arg5: 1
+  arg6: 94904283156080
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 94904283183040
+  arg3: 32768
+  arg4: 94904283148304
+  arg5: 48
+  arg6: 140404445422000
+[2025-06-28 19:51:36] [PID 28356] Syscall lstat chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 94904283163000
+  arg3: 94904283163000
+  arg4: 140734548788448
+  arg5: 1
+  arg6: 2685810432
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 140404445570806
+  arg3: 94904283156304
+  arg4: 255
+  arg5: 94904283156304
+  arg6: 2685810432
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 94903443521195
+  arg3: 0
+  arg4: 0
+  arg5: 0
+  arg6: 2685810432
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 1
+  arg2: 526337
+  arg3: 0
+  arg4: 0
+  arg5: 94904283149568
+  arg6: 1024
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 5
+  arg2: 140734548787120
+  arg3: 110
+  arg4: 0
+  arg5: 94904283149568
+  arg6: 140734548787040
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 140734548787120
+  arg3: -360
+  arg4: 0
+  arg5: 94904283149568
+  arg6: 140734548787040
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 1
+  arg2: 526337
+  arg3: 0
+  arg4: 140734548788099
+  arg5: 36
+  arg6: 140734548787040
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 5
+  arg2: 140734548787616
+  arg3: 110
+  arg4: 140734548788099
+  arg5: 36
+  arg6: 140734548787536
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 140734548787616
+  arg3: -360
+  arg4: 140734548788099
+  arg5: 36
+  arg6: 140734548787536
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445202215
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445202215
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 5
+  arg2: 140734548787552
+  arg3: 140734548787552
+  arg4: 94904283148304
+  arg5: 1
+  arg6: 94904283159280
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 5
+  arg2: 94904283215824
+  arg3: 4096
+  arg4: 94904283148304
+  arg5: 5
+  arg6: 140404445421904
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 5
+  arg2: 94904283215824
+  arg3: 4096
+  arg4: 94904283148304
+  arg5: 5
+  arg6: 94904283159280
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 0
+  arg3: 140404445403296
+  arg4: 94904283148304
+  arg5: 32768
+  arg6: 94904283159280
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445887360
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445887360
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 5
+  arg2: 140734548785360
+  arg3: 140734548785360
+  arg4: 0
+  arg5: 1
+  arg6: 140404445887360
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 106385
+  arg3: 1
+  arg4: 2
+  arg5: 5
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 106385
+  arg3: 1
+  arg4: 2
+  arg5: 5
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 94904283158416
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 94904283158416
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 5
+  arg2: 140734548785784
+  arg3: 832
+  arg4: 0
+  arg5: 524288
+  arg6: 94904283158416
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 5
+  arg2: 140734548785440
+  arg3: 140734548785440
+  arg4: 0
+  arg5: 1
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 79672
+  arg3: 1
+  arg4: 2050
+  arg5: 5
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404436746240
+  arg2: 28672
+  arg3: 5
+  arg4: 2066
+  arg5: 5
+  arg6: 12288
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404436774912
+  arg2: 8192
+  arg3: 1
+  arg4: 2066
+  arg5: 5
+  arg6: 40960
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404436783104
+  arg2: 8192
+  arg3: 3
+  arg4: 2066
+  arg5: 5
+  arg6: 45056
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 140404436791296
+  arg2: 22328
+  arg3: 3
+  arg4: 50
+  arg5: 4294967295
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 41
+  arg3: 0
+  arg4: 140404436733952
+  arg5: 4026531573
+  arg6: 1879048226
+[2025-06-28 19:51:36] [PID 28356] Syscall mprotect chamada com argumentos:
+  arg1: 140404436783104
+  arg2: 4096
+  arg3: 1
+  arg4: 140404436787024
+  arg5: 0
+  arg6: 10
+[2025-06-28 19:51:36] [PID 28356] Syscall munmap chamada com argumentos:
+  arg1: 140404436815872
+  arg2: 106385
+  arg3: 140734548790704
+  arg4: 140404436787024
+  arg5: 0
+  arg6: 10
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404436775305
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404436775305
+[2025-06-28 19:51:36] [PID 28356] Syscall lseek chamada com argumentos:
+  arg1: 5
+  arg2: 0
+  arg3: 1
+  arg4: 0
+  arg5: 3072
+  arg6: 140404436775305
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 5
+  arg2: 140734548787600
+  arg3: 140734548787600
+  arg4: 0
+  arg5: 1
+  arg6: 140404436775305
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 5
+  arg2: 94904283217040
+  arg3: 4096
+  arg4: 94904283148304
+  arg5: 5
+  arg6: 140404445421008
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 0
+  arg3: 140404445403296
+  arg4: 140404445088448
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 1
+  arg2: 526337
+  arg3: 0
+  arg4: 94904283148304
+  arg5: 94904283217040
+  arg6: 1024
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 5
+  arg2: 140734548786032
+  arg3: 110
+  arg4: 94904283148304
+  arg5: 94904283217040
+  arg6: 140734548785952
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 140734548786032
+  arg3: -360
+  arg4: 94904283148304
+  arg5: 94904283217040
+  arg6: 140734548785952
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 1
+  arg2: 526337
+  arg3: 0
+  arg4: 140734548788099
+  arg5: 24
+  arg6: 140734548785952
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 5
+  arg2: 140734548786528
+  arg3: 110
+  arg4: 140734548788099
+  arg5: 24
+  arg6: 140734548786448
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 140734548786528
+  arg3: -360
+  arg4: 140734548788099
+  arg5: 24
+  arg6: 140734548786448
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404436775294
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404436775294
+[2025-06-28 19:51:36] [PID 28356] Syscall lseek chamada com argumentos:
+  arg1: 5
+  arg2: 0
+  arg3: 1
+  arg4: 0
+  arg5: 3072
+  arg6: 140404436775294
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 5
+  arg2: 140734548787600
+  arg3: 140734548787600
+  arg4: 0
+  arg5: 1
+  arg6: 140404436775294
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 5
+  arg2: 94904283218080
+  arg3: 4096
+  arg4: 94904283148304
+  arg5: 5
+  arg6: 140404445420896
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 5
+  arg2: 0
+  arg3: 140404445403296
+  arg4: 140404445088448
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall lstat chamada com argumentos:
+  arg1: 140734548788464
+  arg2: 94904283163200
+  arg3: 94904283163200
+  arg4: 140734548788464
+  arg5: 1
+  arg6: 2685810432
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788464
+  arg2: 140404445570806
+  arg3: 94904283158976
+  arg4: 255
+  arg5: 94904283158976
+  arg6: 94904283159280
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788464
+  arg2: 94903443521195
+  arg3: 0
+  arg4: 0
+  arg5: 1
+  arg6: 94904283159280
+[2025-06-28 19:51:36] [PID 28356] Syscall lstat chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 94904283163400
+  arg3: 94904283163400
+  arg4: 140734548788448
+  arg5: 1
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 140404445570806
+  arg3: 94904283218080
+  arg4: 255
+  arg5: 94904283218080
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 94903443521195
+  arg3: 0
+  arg4: 0
+  arg5: 2
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall lstat chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 94904283163600
+  arg3: 94904283163600
+  arg4: 140734548788448
+  arg5: 1
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 140404445570806
+  arg3: 94904283218384
+  arg4: 255
+  arg5: 94904283218384
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 94903443521195
+  arg3: 0
+  arg4: 0
+  arg5: 3
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall lstat chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 94904283163800
+  arg3: 94904283163800
+  arg4: 140734548788448
+  arg5: 1
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 140404445570806
+  arg3: 94904283218688
+  arg4: 255
+  arg5: 94904283218688
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 140734548788448
+  arg2: 94903443521195
+  arg3: 0
+  arg4: 0
+  arg5: 4
+  arg6: 2685810688
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 4
+  arg2: 94904283183040
+  arg3: 32768
+  arg4: 0
+  arg5: 256
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 0
+  arg3: 140404445420512
+  arg4: 0
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 94904283182992
+  arg3: 0
+  arg4: 0
+  arg5: 0
+  arg6: 94904283182992
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 94904283183136
+  arg3: 0
+  arg4: 0
+  arg5: 0
+  arg6: 94904283183136
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 94904283183456
+  arg3: 0
+  arg4: 0
+  arg5: 0
+  arg6: 94904283183456
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548788704
+  arg3: 140734548788704
+  arg4: 0
+  arg5: 1
+  arg6: 94904283183456
+[2025-06-28 19:51:36] [PID 28356] Syscall mmap chamada com argumentos:
+  arg1: 0
+  arg2: 370262
+  arg3: 1
+  arg4: 2
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 370262
+  arg3: 1
+  arg4: 2
+  arg5: 4
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 1
+  arg2: 140734548789024
+  arg3: 140734548789024
+  arg4: 1
+  arg5: 1
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall write chamada com argumentos:
+  arg1: 1
+  arg2: 94904283197520
+  arg3: 9
+  arg4: 0
+  arg5: 2
+  arg6: 140404445422320
+[2025-06-28 19:51:36] [PID 28356] Syscall openat chamada com argumentos:
+  arg1: 4294967196
+  arg2: 140404445194537
+  arg3: 524288
+  arg4: 0
+  arg5: 524288
+  arg6: 140404445194537
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548783984
+  arg3: 140734548783984
+  arg4: 0
+  arg5: 1
+  arg6: 140404445194537
+[2025-06-28 19:51:36] [PID 28356] Syscall fstat chamada com argumentos:
+  arg1: 4
+  arg2: 140734548783520
+  arg3: 140734548783520
+  arg4: 0
+  arg5: 1
+  arg6: 140404445194537
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 94904283198560
+  arg3: 4096
+  arg4: 94904283148304
+  arg5: 4
+  arg6: 140404445422320
+[2025-06-28 19:51:36] [PID 28356] Syscall lseek chamada com argumentos:
+  arg1: 4
+  arg2: -392
+  arg3: 1
+  arg4: 182
+  arg5: 3072
+  arg6: 160
+[2025-06-28 19:51:36] [PID 28356] Syscall read chamada com argumentos:
+  arg1: 4
+  arg2: 94904283198560
+  arg3: 4096
+  arg4: 182
+  arg5: 4
+  arg6: 160
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 4
+  arg2: 0
+  arg3: 140404445403296
+  arg4: 94904283148304
+  arg5: 32768
+  arg6: 94904283203012
+[2025-06-28 19:51:36] [PID 28356] Syscall write chamada com argumentos:
+  arg1: 1
+  arg2: 94904283197520
+  arg3: 63
+  arg4: 4
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall write chamada com argumentos:
+  arg1: 1
+  arg2: 94904283197520
+  arg3: 65
+  arg4: 6
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall write chamada com argumentos:
+  arg1: 1
+  arg2: 94904283197520
+  arg3: 67
+  arg4: 8
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall write chamada com argumentos:
+  arg1: 1
+  arg2: 94904283197520
+  arg3: 67
+  arg4: 8
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall write chamada com argumentos:
+  arg1: 1
+  arg2: 94904283197520
+  arg3: 74
+  arg4: 15
+  arg5: 0
+  arg6: 0
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 1
+  arg2: 94904283197520
+  arg3: 140404445403296
+  arg4: 15
+  arg5: 0
+  arg6: 1
+[2025-06-28 19:51:36] [PID 28356] Syscall close chamada com argumentos:
+  arg1: 2
+  arg2: 0
+  arg3: 140404445403296
+  arg4: 15
+  arg5: 0
+  arg6: 1
+[2025-06-28 19:51:36] [PID 28356] Syscall unknown_syscall chamada com argumentos:
+  arg1: 0
+  arg2: 60
+  arg3: 0
+  arg4: 7
+  arg5: 231
+  arg6: -360

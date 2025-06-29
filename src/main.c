@@ -6,10 +6,10 @@
  * Description:  Ponto de entrada do logger de chamadas de sistema.
  * Responsável por iniciar e controlar o processo alvo usando ptrace.
  *
- * Team:  [NOME DA EQUIPE AQUI]
+ * Team:  Sérgio Nunes,Joel Lacerda,Gustavo e Vinícius
  * * =====================================================================================
  */
-
+#include "parser.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -21,6 +21,33 @@
 #include <signal.h>     // Obrigatório para SIGKILL
 #include <sys/uio.h>    // Obrigatório para a struct iovec
 #include <linux/elf.h>  // Obrigatório para a constante NT_PRSTATUS
+#include <stdint.h>
+#include <time.h>  // para timestamp
+#include <sys/types.h>
+
+
+
+FILE *log_file = NULL;  // arquivo de log global
+
+
+void open_log_file() {
+    log_file = fopen("syscall_log.txt", "w");
+    if (!log_file) {
+        perror("Erro ao abrir arquivo de log");
+        exit(1);
+    }
+}
+
+
+void close_log_file() {
+    if (log_file) {
+        fclose(log_file);
+    }
+}
+
+
+
+
 
 // --- Assinaturas de Funções ---
 // #include "parser.h" // Vamos descomentar isso quando parser.h for criado.
@@ -29,6 +56,11 @@ void wait_for_syscall(pid_t child_pid);
 /**
  * @brief Ponto de entrada principal do programa.
  */
+
+
+
+
+ 
 int main(int argc, char *argv[])
 {
     // Valida se o usuário passou um comando para ser executado.
@@ -76,7 +108,9 @@ int main(int argc, char *argv[])
 
         // Espera o filho parar na chamada execvp()
         wait(NULL);
+        ptrace(PTRACE_SETOPTIONS, child_pid, NULL, PTRACE_O_TRACESYSGOOD);
 
+        open_log_file();
          // Loop principal: vamos capturar cada syscall
         while(1) {
             // Estrutura para armazenar os registradores da CPU do processo filho.
@@ -89,7 +123,11 @@ int main(int argc, char *argv[])
             #if defined(__x86_64__)
                 // Lógica específica para x86-64 para obter os registradores
                 ptrace(PTRACE_GETREGS, child_pid, NULL, &regs);
-                printf("SYSCALL_ENTRY: Número = %lld\n", regs.orig_rax);
+                const char *syscall_name = get_syscall_name(regs.orig_rax);
+                printf("SYSCALL_ENTRY: %s (%lld)\n", syscall_name, regs.orig_rax);
+
+                // Aqui você chama a função que imprime os argumentos da syscall:
+                log_syscall_args(child_pid, &regs, syscall_name, log_file);
 
                 // --- TRATAMENTO DA SAÍDA DA SYSCALL ---
                 wait_for_syscall(child_pid);
@@ -115,6 +153,7 @@ int main(int argc, char *argv[])
                 #error "Arquitetura não suportada."
             #endif
         } // Fim do while(1)
+        close_log_file();
     }
 
     return 0;
@@ -124,8 +163,7 @@ int main(int argc, char *argv[])
  * @brief Avança o processo filho até a próxima entrada/saída de syscall e espera.
  * * @param child_pid O PID do processo filho a ser monitorado.
  */
-void wait_for_syscall(pid_t child_pid)
-{
+void wait_for_syscall(pid_t child_pid){
     int status;
     while (1)
     {
