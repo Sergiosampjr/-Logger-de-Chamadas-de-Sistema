@@ -1,0 +1,642 @@
+--- Início do Log de Chamadas de Sistema ---
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: brk
+  arg1(x0): 0
+  arg2(x1): 0
+  arg3(x2): 0
+  arg4(x3): 277744895117752
+  arg5(x4): 0
+  arg6(x5): 29
+
+  -> Retorno = 191571990315008
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 0
+  arg2(x1): 8192
+  arg3(x2): 3
+  arg4(x3): 34
+  arg5(x4): -1
+  arg6(x5): 0
+
+  -> Retorno = 277744895090688
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: faccessat
+  arg1(x0): -100
+  arg2(x1): 277744895006416
+  arg3(x2): 4
+  arg4(x3): 256152
+  arg5(x4): 1685382482
+  arg6(x5): 56
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 277744894997496
+  arg3(x2): 524288
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 191571683445966
+
+  -> Retorno = 3
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: fstat
+  arg1(x0): 3
+  arg2(x1): 281474143296112
+  arg3(x2): 524288
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 191571683445966
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 0
+  arg2(x1): 59965
+  arg3(x2): 1
+  arg4(x3): 2
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 277744895029248
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: close
+  arg1(x0): 3
+  arg2(x1): 59965
+  arg3(x2): 1
+  arg4(x3): 2
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 277744895091008
+  arg3(x2): 524288
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 3
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: read
+  arg1(x0): 3
+  arg2(x1): 281474143296576
+  arg3(x2): 832
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 832
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: fstat
+  arg1(x0): 3
+  arg2(x1): 281474143296192
+  arg3(x2): 3
+  arg4(x3): 277744895128432
+  arg5(x4): 277744895091008
+  arg6(x5): 277744895128432
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 0
+  arg2(x1): 1957936
+  arg3(x2): 0
+  arg4(x3): 2082
+  arg5(x4): -1
+  arg6(x5): 0
+
+  -> Retorno = 277744892899328
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 277744892903424
+  arg2(x1): 1892400
+  arg3(x2): 5
+  arg4(x3): 2066
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 277744892903424
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: munmap
+  arg1(x0): 277744892899328
+  arg2(x1): 4096
+  arg3(x2): 277744892903424
+  arg4(x3): 277744894795824
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: munmap
+  arg1(x0): 277744894799872
+  arg2(x1): 57392
+  arg3(x2): 277744892903424
+  arg4(x3): 277744894795824
+  arg5(x4): 277744894857264
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mprotect
+  arg1(x0): 277744894648320
+  arg2(x1): 77824
+  arg3(x2): 0
+  arg4(x3): 277744894795824
+  arg5(x4): 277744894857264
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 277744894726144
+  arg2(x1): 20480
+  arg3(x2): 3
+  arg4(x3): 2066
+  arg5(x4): 3
+  arg6(x5): 1757184
+
+  -> Retorno = 277744894726144
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 277744894746624
+  arg2(x1): 49200
+  arg3(x2): 3
+  arg4(x3): 50
+  arg5(x4): -1
+  arg6(x5): 0
+
+  -> Retorno = 277744894746624
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: close
+  arg1(x0): 3
+  arg2(x1): 3
+  arg3(x2): 6
+  arg4(x3): 1685382483
+  arg5(x4): 277744892903488
+  arg6(x5): 8
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: set_tid_address
+  arg1(x0): 277744895094800
+  arg2(x1): 277744895123456
+  arg3(x2): 277744895094784
+  arg4(x3): 277744895126440
+  arg5(x4): 277744895094880
+  arg6(x5): 4
+
+  -> Retorno = 4734
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: set_robust_list
+  arg1(x0): 277744895094816
+  arg2(x1): 24
+  arg3(x2): 277744895094816
+  arg4(x3): 1
+  arg5(x4): 0
+  arg6(x5): 277744895094864
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: rseq
+  arg1(x0): 277744895096576
+  arg2(x1): 32
+  arg3(x2): 0
+  arg4(x3): 3559439360
+  arg5(x4): 277744895096608
+  arg6(x5): 4294967295
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mprotect
+  arg1(x0): 277744894726144
+  arg2(x1): 12288
+  arg3(x2): 1
+  arg4(x3): 1822832
+  arg5(x4): 1
+  arg6(x5): 281474143299120
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mprotect
+  arg1(x0): 191571683569664
+  arg2(x1): 4096
+  arg3(x2): 1
+  arg4(x3): 129616
+  arg5(x4): 1
+  arg6(x5): 281474143299120
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mprotect
+  arg1(x0): 277744895115264
+  arg2(x1): 8192
+  arg3(x2): 1
+  arg4(x3): 256152
+  arg5(x4): 1
+  arg6(x5): 3
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: prlimit64
+  arg1(x0): 0
+  arg2(x1): 3
+  arg3(x2): 0
+  arg4(x3): 281474143299128
+  arg5(x4): 277744894287904
+  arg6(x5): 40
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: munmap
+  arg1(x0): 277744895029248
+  arg2(x1): 59965
+  arg3(x2): 277744895123456
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: getrandom
+  arg1(x0): 277744894764920
+  arg2(x1): 8
+  arg3(x2): 1
+  arg4(x3): 1
+  arg5(x4): 8
+  arg6(x5): 0
+
+  -> Retorno = 8
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: brk
+  arg1(x0): 0
+  arg2(x1): 0
+  arg3(x2): 131760
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 191571990315008
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: brk
+  arg1(x0): 191571990450176
+  arg2(x1): 191571990450176
+  arg3(x2): 277744894767904
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 191571990450176
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 277744894413408
+  arg3(x2): 524288
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 281474143298235
+
+  -> Retorno = 3
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: fstat
+  arg1(x0): 3
+  arg2(x1): 277744894744352
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 281474143298235
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 0
+  arg2(x1): 14617984
+  arg3(x2): 1
+  arg4(x3): 2
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 277744877305856
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: close
+  arg1(x0): 3
+  arg2(x1): 685
+  arg3(x2): 24812
+  arg4(x3): 11625
+  arg5(x4): 24812
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: fstat
+  arg1(x0): 1
+  arg2(x1): 281474143299328
+  arg3(x2): 0
+  arg4(x3): 1
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 281474143301437
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: write
+  arg1(x0): 2
+  arg2(x1): 281474143296968
+  arg3(x2): 5
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 5
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: write
+  arg1(x0): 2
+  arg2(x1): 281474143297160
+  arg3(x2): 10
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 10
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 281474143296448
+  arg3(x2): 524288
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 287762808831
+
+  -> Retorno = 3
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: fstat
+  arg1(x0): 3
+  arg2(x1): 281474143295960
+  arg3(x2): 277744893428364
+  arg4(x3): 10
+  arg5(x4): 1
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: read
+  arg1(x0): 3
+  arg2(x1): 191571990320752
+  arg3(x2): 4096
+  arg4(x3): 283467841539
+  arg5(x4): 4222461064
+  arg6(x5): 0
+
+  -> Retorno = 2996
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: read
+  arg1(x0): 3
+  arg2(x1): 191571990320752
+  arg3(x2): 4096
+  arg4(x3): 283467841539
+  arg5(x4): 1
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: close
+  arg1(x0): 3
+  arg2(x1): 277744893428448
+  arg3(x2): 2056
+  arg4(x3): 283467841539
+  arg5(x4): 1
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990320960
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990321968
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990321136
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990321680
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990322416
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990321280
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990322032
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990322688
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = -2
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 191571990321536
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = 3
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: fstat
+  arg1(x0): 3
+  arg2(x1): 281474143296888
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 2315806126460698624
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 0
+  arg2(x1): 147816
+  arg3(x2): 1
+  arg4(x3): 2
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 277744892751872
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: close
+  arg1(x0): 3
+  arg2(x1): 147816
+  arg3(x2): 1
+  arg4(x3): 2
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: openat
+  arg1(x0): -100
+  arg2(x1): 277744894375728
+  arg3(x2): 524288
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 3
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: fstat
+  arg1(x0): 3
+  arg2(x1): 281474143296152
+  arg3(x2): 0
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: mmap
+  arg1(x0): 0
+  arg2(x1): 27028
+  arg3(x2): 1
+  arg4(x3): 1
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 277744895062016
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: close
+  arg1(x0): 3
+  arg2(x1): 27028
+  arg3(x2): 1
+  arg4(x3): 1
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: futex
+  arg1(x0): 277744894744156
+  arg2(x1): 129
+  arg3(x2): 2147483647
+  arg4(x3): 0
+  arg5(x4): 3
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: write
+  arg1(x0): 2
+  arg2(x1): 281474143295832
+  arg3(x2): 35
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 35
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: write
+  arg1(x0): 2
+  arg2(x1): 281474143296888
+  arg3(x2): 1
+  arg4(x3): 0
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 1
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: close
+  arg1(x0): 1
+  arg2(x1): 277744893428448
+  arg3(x2): 2056
+  arg4(x3): 2052
+  arg5(x4): 0
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: close
+  arg1(x0): 2
+  arg2(x1): 277744893428448
+  arg3(x2): 0
+  arg4(x3): 2052
+  arg5(x4): 4222427141
+  arg6(x5): 0
+
+  -> Retorno = 0
+
+[2025-07-01 08:31:28] [PID 4734] Syscall: exit_group
+  arg1(x0): 1
+  arg2(x1): 1
+  arg3(x2): 277744895096416
+  arg4(x3): 32
+  arg5(x4): 0
+  arg6(x5): 281474143299696
+
+
+--- Fim do Log ---
