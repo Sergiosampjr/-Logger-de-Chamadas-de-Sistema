@@ -1,1 +1,88 @@
-// Para scripts ou anotações de teste
+PLANO DE TESTES - SYSCALL LOGGER
+=================================
+
+
+Este documento descreve os passos para testar a ferramenta de rastreamento de chamadas de sistema.
+
+--- CONFIGURACAO DO AMBIENTE DE TESTE ---
+
+Para executar os testes de forma eficiente, utilize duas janelas de terminal lado a lado dentro da VM Ubuntu.
+
+1. TERMINAL 1 (O Logger):
+   - Usado para executar o programa logger.
+   - Navegue até a pasta raiz do projeto. Ex: cd ~/Documentos/syscall-logger-projeto/
+
+2. TERMINAL 2 (O Observador):
+   - Usado para monitorar o arquivo de log em tempo real.
+   - Execute o comando e deixe-o rodando:
+     $ tail -f syscall_log.txt
+
+
+--- TESTE 1: COMANDO SIMPLES (ls) ---
+
+Objetivo: Testar a funcionalidade básica de rastreamento e o ciclo de vida de um processo simples.
+
+COMANDO A EXECUTAR (no Terminal 1):
+$ ./bin/meu_logger ls -l /etc
+
+O QUE PROCURAR NO LOG (no Terminal 2):
+- execve: O início da execução do /bin/ls.
+- brk, mmap, mprotect: Chamadas de gerenciamento de memória.
+- openat: Abertura de arquivos de configuração e do diretório /etc.
+- getdents64: Leitura do conteúdo do diretório.
+- newfstatat / stat: Leitura dos metadados (permissões, tamanho) de cada arquivo.
+- write: Escrita da saída (a lista de arquivos) no terminal.
+- close: Fechamento dos arquivos.
+- exit_group: O fim do programa.
+
+
+--- TESTE 2: ATIVIDADE DE REDE (ping) ---
+
+Objetivo: Observar syscalls relacionadas a operações de rede.
+
+COMANDO A EXECUTAR (no Terminal 1):
+$ sudo ./bin/meu_logger ping -c 4 8.8.8.8
+* Nota: 'sudo' pode ser necessário para criar sockets de rede.
+
+O QUE PROCURAR NO LOG (no Terminal 2):
+- socket: Criação do ponto de comunicação de rede.
+- connect / sendto: Envio dos pacotes de ping.
+- recvfrom / poll: Espera pelas respostas dos pings.
+- nanosleep: Pausa de 1 segundo entre cada ping.
+- close: Fechamento do socket.
+* Dica: Rodar sem '-c 4' é um bom teste para o encerramento com Ctrl+C.
+
+
+--- TESTE 3: LEITURA DE ARQUIVO (cat) ---
+
+Objetivo: Rastrear o ciclo completo de uma operação de I/O de arquivo.
+
+COMANDOS A EXECUTAR (no Terminal 1):
+1. Crie o arquivo de teste:
+   $ echo "Ola, mundo do ptrace!" > teste.txt
+
+2. Execute o logger no comando 'cat':
+   $ ./bin/meu_logger cat teste.txt
+
+O QUE PROCURAR NO LOG (no Terminal 2):
+- openat: Abertura do arquivo "teste.txt". O argumento será um ponteiro para essa string.
+- read: Leitura do conteúdo do arquivo.
+- write: Escrita do conteúdo lido para a saída padrão (o terminal).
+- close: Fechamento do arquivo.
+
+
+--- TESTE AVANÇADO: RASTREAMENTO DE PROCESSOS FILHOS (fork) ---
+
+Objetivo: Verificar se o logger consegue detectar a criação de novos processos.
+
+MODIFICACAO NECESSARIA NO CODIGO (src/main.c):
+- Altere a linha do ptrace SETOPTIONS para incluir o rastreamento de forks:
+  ptrace(PTRACE_SETOPTIONS, child_pid, 0, PTRACE_O_TRACESYSGOOD | PTRACE_O_TRACEFORK | PTRACE_O_TRACEVFORK | PTRACE_O_TRACECLONE);
+- Recompile com: make
+
+COMANDO A EXECUTAR (no Terminal 1):
+$ ./bin/meu_logger sh -c "echo 'Iniciando...' && ls -l"
+
+O QUE PROCURAR NO LOG (no Terminal 2):
+- clone / fork / vfork: As syscalls que indicam a criação de um novo processo.
+- execve: A execução do comando 'ls' pelo processo filho.
