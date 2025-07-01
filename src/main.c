@@ -25,10 +25,7 @@
 #include <time.h>  // para timestamp
 #include <sys/types.h>
 
-
-
 FILE *log_file = NULL;  // arquivo de log global
-
 
 void open_log_file() {
     log_file = fopen("syscall_log.txt", "w");
@@ -38,16 +35,11 @@ void open_log_file() {
     }
 }
 
-
 void close_log_file() {
     if (log_file) {
         fclose(log_file);
     }
 }
-
-
-
-
 
 // --- Assinaturas de Funções ---
 // #include "parser.h" // Vamos descomentar isso quando parser.h for criado.
@@ -56,11 +48,6 @@ void wait_for_syscall(pid_t child_pid);
 /**
  * @brief Ponto de entrada principal do programa.
  */
-
-
-
-
- 
 int main(int argc, char *argv[])
 {
     // Valida se o usuário passou um comando para ser executado.
