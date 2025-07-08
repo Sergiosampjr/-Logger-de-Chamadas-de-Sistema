@@ -9,24 +9,24 @@
  * Team:  Sérgio, Joel, Gustavo e Vinícius
  * * =====================================================================================
  */
-#include "parser.h"
+
+#define _GNU_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <sys/ptrace.h>
+#include <signal.h>
 #include <sys/wait.h>
-#include <sys/user.h>   // Obrigatório para a struct user_regs_struct
-#include <sys/prctl.h>  // Obrigatório para prctl(PR_SET_PDEATHSIG)
-#include <signal.h>     // Obrigatório para SIGKILL
-#include <sys/uio.h>    // Obrigatório para a struct iovec
-#include <linux/elf.h>  // Obrigatório para a constante NT_PRSTATUS
+#include <sys/ptrace.h>
+#include <sys/user.h>
+#include <sys/uio.h>
+#include <linux/elf.h>
 
 #ifdef __linux__
-#include <sys/prctl.h>  // Específico do Linux
+#include <sys/prctl.h>
 #endif
 
-// Inclui nosso módulo de parsing
 #include "parser.h"
 
 
@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
 
         // Loop principal: vamos capturar cada syscall
         while(1) {
-             // Estrutura para armazenar os registradores da CPU do processo filho.
+            // Estrutura para armazenar os registradores da CPU do processo filho.
             // Declaramos uma vez aqui, e cada bloco a preenche.
             struct user_regs_struct regs;
             long long syscall_number;
@@ -135,8 +135,6 @@ int main(int argc, char *argv[])
                 ptrace(PTRACE_GETREGS, child_pid, NULL, &regs);
                 return_value = regs.rax;
             #elif defined(__aarch64__)
-                iov.iov_base = &regs;
-                iov.iov_len = sizeof(regs);
                 ptrace(PTRACE_GETREGSET, child_pid, NT_PRSTATUS, &iov);
                 return_value = regs.regs[0];
             #endif
